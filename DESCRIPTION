@@ -12,6 +12,6 @@ Encoding: UTF-8
 LazyData: true
 NeedsCompilation: no
 Packaged: 2017-08-25 20:20:32 UTC; n5
-RoxygenNote: 6.1.0
+RoxygenNote: 7.1.2
 URL: https://github.com/tnagler/vinegarch
 BugReports: https://github.com/tnagler/vinegarch/issues

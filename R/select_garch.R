@@ -12,10 +12,14 @@
 select_garch <- function(x) {
     ## model formulations to select from
     formulas <- list(
-        ~ garch(1, 1)
+        ~ garch(1, 0),
+        ~ arma(0, 1) + garch(1, 0),
+        ~ arma(1, 0) + garch(1, 0),
+        ~ arma(1, 1) + garch(1, 0),
+        ~ garch(1, 1),
         ~ arma(0, 1) + garch(1, 1),
         ~ arma(1, 0) + garch(1, 1),
-        ~ arma(1, 1) + garch(1, 1),
+        ~ arma(1, 1) + garch(1, 1)
     )
 
     ## fit all models
